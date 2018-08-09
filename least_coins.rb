@@ -17,3 +17,5 @@ puts final
 end 
 
 coins = 143
+
+least_coins (143)
