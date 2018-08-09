@@ -1,16 +1,20 @@
-#write out your code here
-x = 189
-
-def least_coins(x)
-    a = x/25
-  b = x%25
-    c = b/10
-  d = b%10
-    e = d/5
-  f = d%5
-    g = f/1
-  final = a + c + e + g
-  puts final
+def least_coins(cents)
+  #Code your answer here!
+  quarters=cents/25
+  cents%=25
+  
+  dimes=cents/10
+  cents%=10
+  
+  nickels=cents/5
+  cents%=5
+  
+  pennies=cents
+  
+  coin_hash = {:quarters => quarters, :dimes => dimes, :nickels => nickels, :pennies => pennies}
+  
+  return coin_hash
+  
 end
 
-least_coins(x)
+least_coins(93)
